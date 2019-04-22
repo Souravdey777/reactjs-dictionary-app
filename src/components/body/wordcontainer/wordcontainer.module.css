@@ -1,0 +1,10 @@
+.WordContainer{
+    background-color: white;
+    box-shadow: 0 2px 25px 0 rgba(132, 135, 138, 0.4);
+    width: 100%;
+    border-radius: 8px;
+    height: 1000px;
+    flex-flow: row;
+    font-size: 30px;
+    font-weight: 600;
+}

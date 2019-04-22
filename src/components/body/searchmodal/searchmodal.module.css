@@ -1,0 +1,41 @@
+.SearchModal{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding: 12px 8px;
+    border-radius: 10px;
+    color: rgb(80, 80, 80);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.SearchModal p{
+    display: none;
+    line-height: 1.1;
+}
+
+@media only screen and (min-width: 769px) {
+    .SearchModal{
+        background-color: white;
+        /* background-color: rgb(235, 255, 193); */
+        box-shadow: 0 2px 25px 0 rgba(132, 135, 138, 0.4);
+        max-width: 20%;
+        flex-flow: column;
+        padding: 10px 30px;
+        position: fixed;
+        margin-top: 5%;
+        right: 0;
+        margin-right: 5%;
+        font-size: 50px;
+        font-weight: 700;
+    }
+    
+.SearchModal p{
+    margin: 10px;
+    display: flex;
+    text-align:left;
+    flex-wrap: wrap;
+    padding: 0px 16px;
+    color: yellowgreen;
+    }
+}

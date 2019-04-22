@@ -1,0 +1,24 @@
+.Searchbar{
+    width: 91%;
+    outline: none;
+    margin: 10px;
+    border-radius: 8px;
+    color: rgb(80, 80, 80);
+    background-color: whitesmoke;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid rgba(80, 80, 80,0.5) ;
+}
+
+@media only screen and (max-width: 768px) {
+    .Searchbar{
+        background-color: white;
+        margin: 0px;
+        padding: 4px;
+        font-size: 14px;
+        border-radius: 0px;
+        font-weight: 400;
+        border: 1px solid rgba(80, 80, 80,0.5) ;
+    }
+}
