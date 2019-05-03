@@ -9,13 +9,15 @@ class Body extends Component {
         return (
             <div className={ClassNames.body}>
             <div className={ClassNames.results}>
-            <WordContainer/>
+            <WordContainer resultData={this.props.resultData}
+            loaded={this.props.loaded}/>
             </div>
             <div>
             <SearchModal 
             searchBarOnKeyPressHandler={this.props.searchBarOnKeyPressHandler}
             searchBarOnChangeHandler={this.props.searchBarOnChangeHandler}
-            searchButtonOnClickedHandler={this.props.searchButtonOnClickedHandler}/>
+            searchButtonOnClickedHandler={this.props.searchButtonOnClickedHandler}
+            query={this.props.query}/>
             </div>
             </div>
         );

@@ -1,10 +1,35 @@
 .WordContainer{
     background-color: white;
-    box-shadow: 0 2px 25px 0 rgba(132, 135, 138, 0.4);
+    box-shadow: 0 2px 16px 0 rgba(132, 135, 138, 0.4);
     width: 100%;
     border-radius: 8px;
     height: 1000px;
     flex-flow: row;
+    text-align: left;
+    font-size: 16px;
+}
+.content{
+    padding: 16px;
+    color: rgb(100, 100, 100);
+}
+.Word{
     font-size: 30px;
     font-weight: 600;
+    padding: 8px;
+}
+.meaning{
+    padding: 8px;
+}
+.line{
+    height: 2px;
+    width: 100%;
+    border-radius: 1px;
+    background: rgb(100, 100, 100);
+    background: linear-gradient(90deg, rgba(100, 100, 100,1) 0%, rgba(100, 100, 100, 0) 100%);
+}
+
+@media only screen and (min-width: 769px) {
+    .content{
+        padding: 30px;
+    }
 }
