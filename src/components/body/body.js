@@ -7,7 +7,7 @@ import WordContainer from './wordcontainer/wordcontainer';
 class Body extends Component {
     render() {
         return (
-            <div className={ClassNames.body}>
+            <div className={ClassNames.body} style={{minHeight:`${window.innerHeight}px`}}>
             <div className={ClassNames.results}>
             <WordContainer resultData={this.props.resultData}
             loaded={this.props.loaded}/>

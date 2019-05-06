@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import Entries from './entries/entries';
 
 class LexicalEntries extends Component {
-
     render() {
         return (
             <div >
-                    {this.props.l.lexicalCategory}
-                    {/* {this.props.l.entries.map(e=><Entries data={e}/>)} */}
+                    <h3>{this.props.l.lexicalCategory}</h3>
+                    {/* {this.props.l.entries.map(e=>e.homographNumber)}<br/> */}
+                    <ul>{this.props.l.entries.map(e=>e.senses.map((sense,key)=><li key={key}>{sense.definitions[0]}</li>))}</ul>
             </div>
         );
     }
