@@ -1,13 +1,13 @@
 {
-  "main.css": "/reactjs-dictionary-app/static/css/main.deedc447.chunk.css",
-  "main.js": "/reactjs-dictionary-app/static/js/main.33d6b25e.chunk.js",
-  "main.js.map": "/reactjs-dictionary-app/static/js/main.33d6b25e.chunk.js.map",
+  "main.css": "/reactjs-dictionary-app/static/css/main.e28c3c3d.chunk.css",
+  "main.js": "/reactjs-dictionary-app/static/js/main.8274d03a.chunk.js",
+  "main.js.map": "/reactjs-dictionary-app/static/js/main.8274d03a.chunk.js.map",
   "runtime~main.js": "/reactjs-dictionary-app/static/js/runtime~main.96777f53.js",
   "runtime~main.js.map": "/reactjs-dictionary-app/static/js/runtime~main.96777f53.js.map",
   "static/js/2.41994888.chunk.js": "/reactjs-dictionary-app/static/js/2.41994888.chunk.js",
   "static/js/2.41994888.chunk.js.map": "/reactjs-dictionary-app/static/js/2.41994888.chunk.js.map",
   "index.html": "/reactjs-dictionary-app/index.html",
-  "precache-manifest.28a345ef8fa39d809649cd401f8540b5.js": "/reactjs-dictionary-app/precache-manifest.28a345ef8fa39d809649cd401f8540b5.js",
+  "precache-manifest.094f337e0b470a36112c5e9d4cabf180.js": "/reactjs-dictionary-app/precache-manifest.094f337e0b470a36112c5e9d4cabf180.js",
   "service-worker.js": "/reactjs-dictionary-app/service-worker.js",
-  "static/css/main.deedc447.chunk.css.map": "/reactjs-dictionary-app/static/css/main.deedc447.chunk.css.map"
+  "static/css/main.e28c3c3d.chunk.css.map": "/reactjs-dictionary-app/static/css/main.e28c3c3d.chunk.css.map"
 }
