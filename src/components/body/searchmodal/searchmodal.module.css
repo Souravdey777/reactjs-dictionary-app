@@ -18,7 +18,7 @@
     .SearchModal{
         background-color: white;
         /* background-color: rgb(235, 255, 193); */
-        box-shadow: 0 2px 25px 0 rgba(132, 135, 138, 0.4);
+        box-shadow: 0 2px 16px 0 rgba(132, 132, 132, 0.4);
         max-width: 20%;
         flex-flow: column;
         padding: 10px 30px;

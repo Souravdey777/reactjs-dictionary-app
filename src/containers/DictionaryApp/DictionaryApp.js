@@ -2,23 +2,20 @@ import React, { Component } from 'react';
 import Header from '../../components/header/header';
 import Body from '../../components/body/body';
 import axios from 'axios';
+import ClassNames from './DictionaryApp.module.css'
 
 const appID = "0a9702f8";
 const appKey = "6aa8c3e32e0da096e5b17a2126462889";
 class DictionaryApp extends Component {
 
     state = {
-        query: 'good',
+        query: '',
         resultData: {},
-        loaded: false
+        loading: false
     }
-
-    componentDidMount(){
-        this.WordSearch();
-    }
-
 
     WordSearch = () => {
+        this.setState({ loading: false })
         axios.get(`https://cors-anywhere.herokuapp.com/https://od-api.oxforddictionaries.com:443/api/v1/entries/en/${this.state.query}`, {
             headers: {
                 Accept: "application/json",
@@ -31,10 +28,10 @@ class DictionaryApp extends Component {
             }
             else {
                 console.log(response);
-                this.setState({resultData: response.data.results[0],loaded:true},()=>{
+                this.setState({ resultData: response.data.results[0], loading: true }, () => {
                     console.log(this.state.resultData);
                 })
-                
+
             }
         }).catch(error => {
             console.log(error)
@@ -42,15 +39,12 @@ class DictionaryApp extends Component {
     }
 
     OnChangeHandler = (event) => {
-        this.setState({ query: event.target.value }
-            , () => {
-                console.log(this.state.query)
-            });
+        this.setState({ query: event.target.value });
     }
     ButtonOnClickedHandler = () => {
         this.WordSearch();
     }
-    OnKeyPressHandler =(event)=>{
+    OnKeyPressHandler = (event) => {
         if (event.key === 'Enter') {
             this.WordSearch();
         }
@@ -58,7 +52,7 @@ class DictionaryApp extends Component {
 
     render() {
         return (
-            <div className="App">
+            <div className={ClassNames.DictionaryApp}>
                 <Header />
                 <Body
                     searchBarOnKeyPressHandler={this.OnKeyPressHandler}
@@ -66,7 +60,7 @@ class DictionaryApp extends Component {
                     searchButtonOnClickedHandler={this.ButtonOnClickedHandler}
                     query={this.state.query}
                     resultData={this.state.resultData}
-                    loaded={this.state.loaded}
+                    loading={this.state.loading}
                 />
             </div>
         );

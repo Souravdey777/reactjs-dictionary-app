@@ -9,6 +9,7 @@
     font-size: 16px;
     font-weight: bold;
     border: 2px solid rgba(80, 80, 80,0.5) ;
+
 }
 
 @media only screen and (max-width: 768px) {

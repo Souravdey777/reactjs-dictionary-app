@@ -1,11 +1,10 @@
 .body{
     display: flex;
     flex-flow: row;
-    margin-top: 60px;
+    padding-top: 60px;
 }
 .results{
     flex:1;
-    border-right:2px solid yellowgreen;
     margin-right:35%;
     padding: 16px;
 }
@@ -22,6 +21,9 @@
     }
 }
 
+
+
+/* mobile */
 @media only screen and (max-width: 768px) {
     .body{
         flex-flow: column-reverse;
@@ -29,6 +31,7 @@
     .results{
         margin:0%;
         border-right:0px;
+        padding: 0px 16px;
     }
 }
     

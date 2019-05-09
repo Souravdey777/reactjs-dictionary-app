@@ -1,34 +1,95 @@
 .WordContainer{
     background-color: white;
-    box-shadow: 0 2px 16px 0 rgba(132, 135, 138, 0.4);
+    box-shadow: 0 2px 16px 0 rgba(132, 132, 132, 0.4);
     width: 100%;
     border-radius: 8px;
     flex-flow: row;
     text-align: left;
     font-size: 16px;
+    margin-bottom: 16px;
+    font-family: 'Josefin Sans', sans-serif;
 }
+
 .content{
     padding: 16px;
-    color: rgb(100, 100, 100);
+    color: rgb(80, 80, 80);
+    min-height: calc(100vh - 160px);
 }
+
 .Word{
     font-size: 30px;
-    font-weight: 600;
+    font-weight: bolder;
     padding: 8px;
 }
-.meaning{
-    padding: 8px;
-}
-.line{
-    height: 2px;
+
+.NoWord{
+    height: 30px;
     width: 100%;
-    border-radius: 1px;
-    background: rgb(100, 100, 100);
-    background: linear-gradient(90deg, rgba(100, 100, 100,1) 0%, rgba(100, 100, 100, 0) 100%);
+    background-color: rgb(200, 200, 200);
+    background: linear-gradient(135deg,rgb(200, 200, 200) 0%,white 50%, rgb(200, 200, 200) 100%);
+    background-size: 400% 400%;
+    -webkit-animation: MovingBG 1s ease infinite;
+    -moz-animation: MovingBG 1s ease infinite;
+    animation: MovingBG 1s ease infinite;
+    margin: 8px 0px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.meaning{
+    padding: 8px 0px;
+}
+
+.NoMeaning{
+    min-height: calc(100vh - 220px);
+    width: 100%;
+    background-color: rgb(200, 200, 200);
+    background: linear-gradient(135deg,rgb(200, 200, 200) 0%,white 50%, rgb(200, 200, 200) 100%);
+    background-size: 400% 400%;
+    -webkit-animation: MovingBG 1s ease infinite;
+    -moz-animation: MovingBG 1s ease infinite;
+    animation: MovingBG 1s ease infinite;
+    margin: 8px 0px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    height: 4px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: yellowgreen;
+}
+
+.etymology{
+    font-size: 0.8em
+}
+.etymology span{
+    color: black;
+    font-family: 'Baloo Bhai', cursive;
+    text-decoration: underline;
 }
 
 @media only screen and (min-width: 769px) {
     .content{
         padding: 30px;
     }
+}
+
+@-webkit-keyframes MovingBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes MovingBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes MovingBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }

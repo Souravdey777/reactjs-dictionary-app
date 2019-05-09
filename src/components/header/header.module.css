@@ -6,26 +6,21 @@
     align-items: center;
     background-color: yellowgreen;
     box-shadow: 0 2px 8px 0 rgba(132, 135, 138, 0.5);
-    width: 100%;
+    width: 100vw;
     height: 60px;
     top:0;
     left: 0;
     right: 0;
     position: fixed;
     z-index: 100;
-}
-.header p{
     color: whitesmoke;
     font-size: 30px;
     font-weight: 700;
+    white-space: nowrap;
 }
-
 @media only screen and (max-width: 768px) {
     .header{
         padding: 0px;
         justify-content: center;
-    }
-    .header p{
-        font-size: 30px;
     }
 }

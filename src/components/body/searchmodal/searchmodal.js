@@ -8,15 +8,14 @@ class SearchModal extends Component {
         return (
             <div className={ClassNames.SearchModal}>
                 <p>SEARCH
-                    <br/>FOR
-                    <br/>THE
-                    <br/>WORD
+                    <br />FOR
+                    <br />THE
+                    <br />WORD
                 </p>
                 <SearchBar
                     searchBarOnKeyPressHandler={this.props.searchBarOnKeyPressHandler}
                     searchBarOnChangeHandler={this.props.searchBarOnChangeHandler}
-                    query={this.props.query}
-                />
+                    query={this.props.query} />
                 <SearchButton searchButtonOnClickedHandler={this.props.searchButtonOnClickedHandler} />
             </div>
         );

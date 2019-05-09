@@ -1,0 +1,14 @@
+.lexicalCategory{
+    color: rgb(165, 165, 165);
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 0.9em;
+}
+.lexicalEntries{
+    padding: 16px 0px;;
+}
+u{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 0.8em;
+    color: black;
+}

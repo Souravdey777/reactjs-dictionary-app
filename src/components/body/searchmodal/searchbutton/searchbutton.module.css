@@ -9,6 +9,7 @@
     font-size: 16px;
     font-weight: 500;
     transition-duration: 0.2s;
+    box-shadow: 0px 0px 16px 0 rgba(80, 80, 80,0.3);
 }
 
 .Searchbutton:hover{
