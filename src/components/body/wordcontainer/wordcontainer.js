@@ -35,9 +35,10 @@ class WordContainer extends Component {
                                     <div className={ClassNames.line} />
                                 </div>)}
                             <div className={ClassNames.etymology} >
+                            
                                 {this.props.resultData.lexicalEntries.map((lexicalEntry, key) => <div key={key}>
                                     {lexicalEntry.entries.map((entry, key) =>
-                                        entry.etymologies ? <Etymologies entry={entry} key={key} /> : null)}
+                                        entry.etymologies ? <Etymologies entry={entry} key={key} />: null)}
                                 </div>)}
                             </div>
                         </div>
